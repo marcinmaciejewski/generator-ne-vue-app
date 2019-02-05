@@ -1,0 +1,3 @@
+[submodule "static-chuj"]
+	path = static-chuj
+	url = git@github.com:marcinmaciejewski/generator-ne-vue-app-static.git
