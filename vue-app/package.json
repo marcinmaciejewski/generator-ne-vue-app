@@ -1,0 +1,45 @@
+{
+  "name": "NEVueApp",
+  "version": "1.0.0",
+  "description": "My supreme Nuxt.js project",
+  "author": "Nowa Era",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "test": "jest --config ./jest.config.js",
+    "serve-mocks": "nodemon ./mockups/mock-server.js --watch mockups/"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/pwa": "^2.6.0",
+    "css-loader": "^2.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-html": "^5.0.0",
+    "nuxt": "^2.3.4",
+    "postcss-loader": "^3.0.0",
+    "vue-loader": "^15.5.1",
+    "webpack": "^4.28.4",
+    "webpack-ruleset": "^0.1.8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^5.0.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "husky": "^1.3.1",
+    "jest": "^23.6.0",
+    "jest-vue-preprocessor": "^1.4.0",
+    "json-server": "^0.14.2",
+    "nodemon": "^1.18.9",
+    "vue-test-utils": "^1.0.0-beta.11"
+  }
+}

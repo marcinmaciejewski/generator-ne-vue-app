@@ -1,0 +1,42 @@
+main {
+    display: block;
+}
+
+// Following styles are applied using
+// ID due to removing classes from
+// vue app container
+#app { // sass-lint:disable-line no-ids
+    min-height: 70rem;
+}
+
+a {
+    outline-style: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.pwa-container {
+    @include clearfix;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0 auto;
+    @include breakpoint(sm) {
+        width: $width-sm;
+    }
+    @include breakpoint(md) {
+        width: $width-md;
+    }
+    @include breakpoint(lg) {
+        width: $width-lg;
+    }
+}
+
+.columns-2 {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    &__column {
+        width: 50%;
+    }
+}
